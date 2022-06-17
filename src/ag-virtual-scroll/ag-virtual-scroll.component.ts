@@ -313,6 +313,7 @@ export class AgVirtualSrollComponent implements OnInit, AfterViewInit, OnChanges
                 let realIndex = this.startIndex + i;
                 child.style.minHeight = `${this.minRowHeight}px`;
                 child.style.height = `${this.minRowHeight}px`;
+                child.style.display = `contents`;
                 
                 let className = (realIndex + 1) % 2 === 0 ? 'even' : 'odd';
                 let unclassName = className == 'even' ? 'odd' : 'even';
